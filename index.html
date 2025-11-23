@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Fara Wagbo — Spécialiste de santé publique</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg1: linear-gradient(135deg,#0f172a 0%, #1f2937 45%, #0ea5a4 100%);
+      --card: rgba(255,255,255,0.06);
+      --glass: rgba(255,255,255,0.06);
+      --accent: #06b6d4;
+      --muted: rgba(255,255,255,0.75);
+      --glass-2: rgba(255,255,255,0.04);
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+      color-scheme: dark;
+    }
+    html,body{height:100%;margin:0;background:var(--bg1);color:#ecfeff}
+    .container{max-width:1000px;margin:40px auto;padding:28px;border-radius:20px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));box-shadow:0 10px 30px rgba(2,6,23,0.7);backdrop-filter: blur(6px);} 
+    header{display:flex;gap:20px;align-items:center}
+    .avatar{width:110px;height:110px;border-radius:18px;flex:0 0 110px;background:linear-gradient(135deg,#06b6d4,#7c3aed);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:36px;color:rgba(255,255,255,0.95);box-shadow:0 6px 18px rgba(2,6,23,0.6)}
+    .title h1{margin:0;font-size:28px;letter-spacing:-0.4px}
+    .title p{margin:6px 0 0;color:var(--muted)}
+    nav{margin-left:auto}
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;background:linear-gradient(90deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));border:1px solid rgba(255,255,255,0.06);text-decoration:none;color:inherit;font-weight:600}
+
+    .grid{display:grid;grid-template-columns:1fr 360px;gap:22px;margin-top:24px}
+    .card{background:var(--glass);padding:18px;border-radius:14px;border:1px solid rgba(255,255,255,0.03)}
+    h2{margin:0 0 12px 0;font-size:18px}
+    p.lead{margin:0;color:var(--muted);line-height:1.45}
+
+    .tag{display:inline-block;padding:6px 10px;border-radius:999px;background:linear-gradient(90deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));border:1px solid rgba(255,255,255,0.03);font-weight:600;margin-right:8px}
+
+    .timeline{display:flex;flex-direction:column;gap:12px}
+    .event{padding:12px;border-radius:10px;background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.02));border:1px solid rgba(255,255,255,0.03)}
+    .muted{color:var(--muted);font-size:14px}
+
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .skill{padding:8px 10px;border-radius:10px;background:var(--glass-2);border:1px solid rgba(255,255,255,0.03)}
+
+    footer{margin-top:26px;padding-top:8px;border-top:1px solid rgba(255,255,255,0.03);display:flex;justify-content:space-between;align-items:center}
+
+    /* responsive */
+    @media (max-width:920px){.grid{grid-template-columns:1fr;}.avatar{width:88px;height:88px}}
+
+    /* decorative gradient panel */
+    .hero-graphic{height:120px;border-radius:12px;background:linear-gradient(90deg, rgba(6,182,212,0.16), rgba(124,58,237,0.14));display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,0.7);font-weight:700}
+
+    a.pdf-link{display:inline-block;margin-top:10px;padding:10px 12px;border-radius:10px;background:linear-gradient(90deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));border:1px solid rgba(255,255,255,0.03);text-decoration:none;color:inherit}
+
+    .contact-list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px}
+    .contact-item{font-weight:600}
+
+    /* subtle animations */
+    .fade-up{transform:translateY(6px);opacity:0;animation:up .7s cubic-bezier(.2,.9,.2,1) forwards}
+    @keyframes up{to{transform:none;opacity:1}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="fade-up">
+      <div class="avatar">FW</div>
+      <div class="title">
+        <h1>Dr Fara Wagbo — Spécialiste de santé publique</h1>
+        <p class="muted">Médecin de santé publique · Épidémiologiste · Recherche opérationnelle & surveillance</p>
+      </div>
+      <nav>
+        <a class="btn" href="#about">À propos</a>
+        <a class="btn" href="#activites" style="margin-left:8px">Activités</a>
+        <a class="btn" href="#contact" style="margin-left:8px">Contact</a>
+      </nav>
+    </header>
+
+    <div class="grid">
+      <main>
+        <section id="about" class="card fade-up" style="margin-bottom:16px">
+          <div class="hero-graphic">Spécialiste en épidémiologie & santé publique</div>
+          <h2 style="margin-top:14px">À propos de moi</h2>
+          <p class="lead">Titulaire d’un doctorat d’Etat en Médecine et de plusieurs masters en santé publique, épidémiologie, recherche clinique et statistiques appliquées, je suis un professionnel de la santé publique avec plus de dix ans d'expérience en Afrique de l'Ouest et centrale. Je travaille actuellement comme épidémiologiste référent et chef de projets épidémiologiques pour Epicentre / Médecins Sans Frontières, basé à Dakar.</p>
+
+          <p class="lead" style="margin-top:10px">Mes domaines d'expertise incluent la surveillance épidémiologique, l'investigation et la gestion des épidémies (rougeole, méningite, choléra, fièvre de la vallée du Rift, COVID-19), la recherche opérationnelle, la santé communautaire, ainsi que la formation et le renforcement de capacités des équipes terrain.</p>
+
+          <div style="margin-top:12px">
+            <span class="tag">Médecin de santé publique</span>
+            <span class="tag">Épidémiologie</span>
+            <span class="tag">Surveillance</span>
+            <span class="tag">Recherche opérationnelle</span>
+          </div>
+
+          <div style="margin-top:12px;font-size:14px">
+            <strong>Localisation</strong>: Dakar, Sénégal<br>
+            <strong>Téléphone</strong>: +221 784766857
+          </div>
+
+        </section>
+
+        <section id="activites" class="card fade-up">
+          <h2>À propos de mes activités</h2>
+          <p class="lead">Je conçois, dirige et coordonne des interventions épidémiologiques et des projets de recherche qui soutiennent les décisions opérationnelles sur le terrain. Mes activités comprennent la définition de stratégies d'intervention, le renforcement des capacités (formation des équipes), la gestion des données et la production de rapports destinés aux décideurs et partenaires.</p>
+
+          <p class="lead" style="margin-top:8px">Mon travail de recherche doctorale à l'Université de Genève porte sur la prise en charge de la drépanocytose en milieu rural excentré — une approche pragmatique pour évaluer l'efficacité d'une nouvelle thérapie et identifier les leviers de mise à l'échelle dans un contexte à ressources limitées.</p>
+
+          <p class="lead" style="margin-top:8px">J'ai dirigé et contribué à des projets liés à la surveillance et à la gestion d'épidémies, aux études opérationnelles et à l'amélioration des pratiques en santé communautaire, avec un accent particulier sur la santé des enfants et des femmes.</p>
+
+          <a class="pdf-link" href="/mnt/data/Fara.pdf" target="_blank" rel="noopener">Résumé des activités (PDF)</a>
+        </section>
+
+        <section class="card fade-up" style="margin-top:14px">
+          <h2>Expériences sélectionnées</h2>
+          <div class="timeline">
+            <div class="event">
+              <div style="display:flex;justify-content:space-between;align-items:center"><strong>Juillet 2023 – Présent</strong><span class="muted">Épicentre / MSF OCBA — Dakar</span></div>
+              <div class="muted" style="margin-top:6px">Épidémiologiste référent & responsable de projets épidémiologiques. Recrutement et encadrement d'équipes, définition de stratégies épidémiologiques, gestion de projets de recherche et renforcement des capacités.</div>
+            </div>
+
+            <div class="event">
+              <div style="display:flex;justify-content:space-between;align-items:center"><strong>Juillet 2021 – Juin 2023</strong><span class="muted">Épicentre — Dakar</span></div>
+              <div class="muted" style="margin-top:6px">Coordinateur de l’unité épidémiologie — gestion d'équipe, appui opérationnel, développement et gestion de projets de recherche.</div>
+            </div>
+
+            <div class="event">
+              <div style="display:flex;justify-content:space-between;align-items:center"><strong>Mai 2017 – Juin 2021</strong><span class="muted">Epicentre / Médecins Sans Frontières — Dakar</span></div>
+              <div class="muted" style="margin-top:6px">Médecin épidémiologiste — assistance aux équipes terrain, participation aux interventions, recrutement et formation d’épidémiologistes.</div>
+            </div>
+
+            <div class="event">
+              <div style="display:flex;justify-content:space-between;align-items:center"><strong>2015 – 2017</strong><span class="muted">MSF — Niamey, Niger</span></div>
+              <div class="muted" style="margin-top:6px">Responsable des activités épidémiologiques — planification et gestion des activités épidémiologiques de la mission.</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="card fade-up" style="margin-top:14px">
+          <h2>Formation</h2>
+          <p class="muted" style="margin:0 0 10px 0">Doctorant en santé publique globale — Université de Genève (2024 – présent)</p>
+          <p class="muted" style="margin:0 0 6px 0">Master — Statistiques des sciences de la santé, Université de Montpellier (2014–2016)</p>
+          <p class="muted" style="margin:0 0 6px 0">Master — Santé publique en société et développement, Aix-Marseille (2011–2013)</p>
+          <p class="muted" style="margin:0 0 6px 0">Master — Épidémiologie (Toulouse / Bordeaux, 2013–2014)</p>
+          <p class="muted" style="margin:0 0 6px 0">Docteur en médecine — Université Gamal Abdel Nasser, Conakry (2002–2008)</p>
+        </section>
+
+      </main>
+
+      <aside>
+        <div class="card fade-up">
+          <h2>Compétences & Logiciels</h2>
+          <div class="skills" style="margin-top:10px">
+            <div class="skill">Surveillance épidémiologique</div>
+            <div class="skill">Investigation d'épidémies</div>
+            <div class="skill">Recherche opérationnelle</div>
+            <div class="skill">Gestion de projets</div>
+            <div class="skill">Formation & renforcement de capacités</div>
+            <div class="skill">Analyse statistique</div>
+            <div class="skill">Gestion de budget</div>
+          </div>
+
+          <h2 style="margin-top:14px">Langues</h2>
+          <p class="muted">Français (excellent) · Anglais (bon)</p>
+
+          <h2 style="margin-top:14px">Certifications & Formations</h2>
+          <p class="muted" style="margin:0">RepEpi (2018) · Populations en situation précaire (2016) · Communication publique (2021) · Soft skills (2023) · Gestion de projet humanitaire (2022)</p>
+        </div>
+
+        <div class="card fade-up" style="margin-top:14px">
+          <h2>Contact</h2>
+          <ul class="contact-list">
+            <li class="contact-item">Dakar, Sénégal</li>
+            <li class="contact-item">Téléphone: +221 784766857</li>
+            <li class="contact-item">Pas d'email affiché pour éviter le spam</li>
+          </ul>
+
+          <a class="pdf-link" href="/mnt/data/Fara.pdf" target="_blank" rel="noopener" style="display:block;margin-top:8px">Résumé activités (PDF)</a>
+        </div>
+
+        <div class="card fade-up" style="margin-top:14px">
+          <h2>Remarques</h2>
+          <p class="muted">Le rôle mentionné dans certains documents a été uniformisé et remplacé par <strong>« Médecin de santé publique »</strong> conformément à votre demande.</p>
+        </div>
+      </aside>
+    </div>
+
+    <footer>
+      <div class="muted">© Dr Fara Wagbo — Spécialiste de santé publique</div>
+      <div>
+        <a class="btn" href="#about">En savoir plus</a>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // smooth scroll for nav
+    document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();document.querySelector(a.getAttribute('href')).scrollIntoView({behavior:'smooth'});}));
+    // simple reveal
+    window.addEventListener('load',()=>{document.querySelectorAll('.fade-up').forEach((el,i)=>{el.style.animationDelay=(i*60)+'ms'})});
+  </script>
+</body>
+</html>
